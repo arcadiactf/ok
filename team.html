@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team Members</title>
+  <link rel="stylesheet" href="style.css" />
+ <link rel="icon" href="https://i.ibb.co/KpMh7tmj/headlogo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      margin-top: 20px;
+      font-family: sans-serif;
+      background-color: transparent;
+      padding: 0px;
+      color: white;
+    }
+
+    .team-section {
+      max-width: 1200px;
+      margin: auto;
+      margin-top: 20px;
+      padding: 20px;
+    }
+
+    .team-group {
+      margin-bottom: 50px;
+    }
+
+    .team-heading {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 20px;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .profile-card {
+      width: 300px;
+      background: transparent;
+      border: 2px solid #fcd300;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      transition: all 0.4s ease;
+    }
+
+    .profile-card:hover {
+      box-shadow: 0 0 10px #00ffff44;
+      transform: translateY(-10px);
+    }
+
+    .image-wrapper {
+      width: 180px;
+      height: 180px;
+      margin: 0 auto 15px;
+      overflow: hidden;
+      border-radius: 50%;
+      transition: 0.4s ease;
+    }
+
+    .profile-card:hover .image-wrapper {
+      border-radius: 20px;
+      transform: translateY(-5px);
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .name {
+      font-weight: 600;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .role {
+      color: #fcd300;
+      margin-bottom: 10px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.4s ease;
+    }
+
+    .profile-card:hover .social-icons {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .social-icons a {
+      text-decoration: none;
+    }
+
+    .social-icons i {
+      font-size: 18px;
+      padding: 10px;
+      background: #222;
+      border-radius: 50%;
+      transition: 0.3s ease;
+      color: white;
+    }
+
+    .social-icons i:hover {
+      transform: scale(1.2);
+      background: #fcd300;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+     <header id="navbar" class="navbar" style="font-family: 'Gagalin', cursive;">
+    <div class="logo">
+      <img src="logo.png" alt="CTF Logo" class="logo-image" />
+    </div>
+
+    <nav  class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#team">Event Coordinators</a>
+    </nav>
+    <button class="register-btn" onclick="location.href='register.html'">Register</button>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <!-- Dropdown Container -->
+<div id="dropdown" class="dropdown-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="team.html">Event Coordinators</a>
+</div>
+
+
+<div class="social-sidebar">
+  <a href="https://www.instagram.com/whitehatians" target="_blank" class="sidebar-icon instagram">
+    <img src="https://img.icons8.com/ios-filled/30/e1306c/instagram-new.png" alt="Instagram" />
+    <span class="label">Instagram</span>
+  </a>
+  <a href="https://www.linkedin.com/company/whitehatians" target="_blank" class="sidebar-icon linkedin">
+    <img src="https://img.icons8.com/ios-filled/30/0e76a8/linkedin.png" alt="LinkedIn" />
+    <span class="label">LinkedIn</span>
+  </a>
+  <a href="https://www.youtube.com/@whitehatians" target="_blank" class="sidebar-icon twitter">
+    <img src="https://img.icons8.com/ios-filled/30/ff0000/youtube.png" alt="YouTube" />
+    <span class="label">YouTube</span>
+  </a>
+</div>
+
+
+<!-- Smart Mobile Social Panel -->
+<div class="mobile-smart-social" id="mobileSmartSocial">
+  <a href="https://www.instagram.com/whitehatians" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/30/e1306c/instagram-new.png" alt="Instagram" />
+  </a>
+  <a href="https://www.linkedin.com/company/whitehatians" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/30/0e76a8/linkedin.png" alt="LinkedIn" />
+  </a>
+  <a href="https://www.youtube.com/@whitehatians" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/30/ff0000/youtube.png" alt="YouTube" />
+  </a>
+</div>
+
+
+
+  <section class="team-section">
+
+    <!-- Convenor -->
+    <div class="team-group">
+      <h2 class="team-heading">Convenor</h2>
+      <div class="card-container">
+        <div class="profile-card">
+          <div class="image-wrapper">
+            <img src="hod.png" alt="Dr. M. Senthil Kumar">
+          </div>
+          <div class="name">DR. M. SENTHIL KUMAR</div>
+          <div class="role">Head of Cyber Security Department,<br>Professor</div>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/senthil-kumar-murugesan-953376a2/"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Staff Coordinator -->
+    <div class="team-group">
+      <h2 class="team-heading">Club Coordinator</h2>
+      <div class="card-container">
+        <div class="profile-card">
+          <div class="image-wrapper">
+            <img src="rajubai.JPG" alt="Staff Coordinator">
+          </div>
+          <div class="name">Mr.E.Raj Kumar</div>
+          <div class="role">Assistant Professor</div>
+          <div class="social-icons">
+         </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Student Coordinators (2 in same row) -->
+    <div class="team-group">
+      <h2 class="team-heading">Event Coordinators</h2>
+      <div class="card-container">
+        <div class="profile-card">
+          <div class="image-wrapper">
+            <img src="giridaran.png" alt="Student Coordinator">
+          </div>
+          <div class="name">Mr.S.Giridaran</div>
+          <div class="role">Assistant Professor</div>
+          <div class="social-icons">
+            
+          </div>
+        </div>
+
+        <div class="profile-card">
+          <div class="image-wrapper">
+            <img src="ragavimam.png" alt="Student Coordinator">
+          </div>
+          <div class="name">Mrs.M.Ragavi</div>
+          <div class="role">Assistant Professor</div>
+          <div class="social-icons">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+  </section>
+  <script src="script.js"></script>
+
+</body>
+</html>
